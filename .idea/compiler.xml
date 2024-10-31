@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.6">
+      <module name="microservice_architecture.main" target="17" />
+      <module name="microservice_architecture.test" target="17" />
+      <module name="ticket-servise" target="17" />
+      <module name="ticket-servise.main" target="17" />
+      <module name="ticket-servise.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

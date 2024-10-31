@@ -12,9 +12,12 @@ public class TestController {
     @Value("${eureka.instance.instance-id}")
     private String eurekaInstanceClientID;
 
+    @Value("${temporaryVariable}")
+    private Integer temporaryVariable;
+
     @GetMapping("/test")
 
       public String test(){
-        return "spring.application.name = " + eurekaInstanceClientID;
+        return "spring.application.name = " + eurekaInstanceClientID + " temporaryVariable = " + temporaryVariable ;
     }
 }
