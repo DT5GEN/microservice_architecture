@@ -1,2 +1,3 @@
 rootProject.name = 'microservice_architecture'
 includeBuild 'eureka-server'
+includeBuild 'ticket-service'
