@@ -1,14 +1,16 @@
 server:
-  port:8888
+  port: 8888
 
 spring:
   application:
     name: config-server
   profiles:
-    active:
-      - native
+    active: native
   cloud:
     config:
+      import: "optional:configserver:"
+      uri: http://localhost:8888
+      fail-fast: true
       server:
         native:
-          search-locations:classpath:/config
+          search-locations: classpath:/config
